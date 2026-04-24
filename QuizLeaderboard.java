@@ -87,7 +87,7 @@ public class QuizLeaderboard {
         System.out.println("\nSubmit Response: " + submitResponse.body());
     }
 
-    // Minimal JSON parser for events array — no external dependencies
+  
     static List<String[]> parseEvents(String json) {
         List<String[]> result = new ArrayList<>();
         int idx = json.indexOf("\"events\"");
