@@ -12,11 +12,11 @@ The entire solution is in a single Java file with no external dependencies.
 
 **Deduplication** was the core challenge. I used a composite key `roundId|participant` and `putIfAbsent` on a HashMap — so if the same round+participant combo shows up again in a later poll, it just gets ignored. First occurrence wins.
 
-**Polling** — 10 GET requests, poll 0 through 9, with a 5 second wait between each one as required.
+**Polling**: 10 GET requests, poll 0 through 9, with a 5 second wait between each one as required.
 
-**Aggregation** — after deduplication, scores are summed per participant across all unique rounds.
+**Aggregation**: after deduplication, scores are summed per participant across all unique rounds.
 
-**Submission** — sorted by total score descending, posted once.
+**Submission**: sorted by total score descending, posted once.
 
 ## Running it
 
@@ -36,7 +36,7 @@ Leaderboard: [{"participant":"Bob","totalScore":295},{"participant":"Alice","tot
 Total score: 835
 Submit Response: {"submittedTotal":835,"attemptCount":1}
 ```
-![Terminal Output](output.png)
+![Terminal Output](Output.png)
 
 ## Stack
 
