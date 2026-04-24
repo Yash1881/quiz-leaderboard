@@ -1,6 +1,6 @@
 # Quiz Leaderboard System
 
-Internship assignment from Bajaj Finserv Health — built for the SRM qualifier round.
+Internship assignment from Bajaj Finserv Health built for the SRM qualifier round.
 
 ## What the problem asked
 
